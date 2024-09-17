@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 
-interface TabItemProps {
-  label: string;
+const StyledTypography = ({ ...props }) => {
+  return (
+    <Typography variant="h2" fontWeight='400' textTransform='none' {...props} />
+  )
 }
-
-const TabItem: React.FC<TabItemProps> = ({ label }) => (
-  <Tab
-    label={
-      <Typography variant="h2" fontWeight="400" textTransform='none'>
-        {label}
-      </Typography>
-    }
-  />
-);
 
 export const TabSettings = () => {
   const [currentTab, setCurrentTab] = useState(0);
@@ -66,10 +58,26 @@ export const TabSettings = () => {
           },
         }}
       >
-       <TabItem label="Messages" />
-        <TabItem label="Social" />
-        <TabItem label="Notifications" />
-        <TabItem label="Backup" />
+        <Tab
+          label={
+            <StyledTypography>Messages</StyledTypography>
+          }
+        />
+        <Tab
+          label={
+            <StyledTypography>Social</StyledTypography>
+          }
+        />
+        <Tab
+          label={
+            <StyledTypography>Notifications</StyledTypography>
+          }
+        />
+        <Tab
+          label={
+            <StyledTypography>Backup</StyledTypography>
+          }
+        />
       </Tabs>
     </Box>
   );

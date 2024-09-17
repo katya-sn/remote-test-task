@@ -1,21 +1,26 @@
-import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export const StyledTypography = ({ ...props }) => {
-  return (
-    <Typography variant="h3" fontWeight='400' color='white' {...props} />
-  )
-}
+  return <Typography variant="h3" fontWeight="400" color="white" {...props} />;
+};
 
 export const StyledAccordion = (props: any) => {
   return (
     <Accordion
       sx={{
-        backgroundColor: 'transparent',
-        boxShadow: 'none',
-        color: 'white',
-        width: '218px',
+        backgroundColor: "transparent",
+        boxShadow: "none",
+        color: "white",
+        width: "218px",
+        "&::before": {
+          display: "none",
+        },
       }}
       {...props}
     />
@@ -35,8 +40,8 @@ export const StyledAccordionDetails = (props: any) => {
   return (
     <AccordionDetails
       sx={{
-        color: 'white',
-        bgcolor: 'transparent',
+        color: "white",
+        bgcolor: "transparent",
         ...props.sx,
       }}
       {...props}
