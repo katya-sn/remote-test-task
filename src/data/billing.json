@@ -1,0 +1,139 @@
+{
+  "account": {
+    "id": "123456",
+    "name": "Brooklyn Alice",
+    "salary": "+$2000",
+    "paypal": "$455"
+  },
+  "cards": [
+    {
+      "id": "card1",
+      "type": "masterCard",
+      "name": "John Doe",
+      "number": "**** **** **** 7852",
+      "expiry_date": "11/22"
+    },
+    {
+      "id": "card2",
+      "type": "visa",
+      "number": "**** **** **** 5678",
+      "expiry_date": "11/24"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "txn1",
+      "date": "2020-03-27",
+      "time": "at 12:30 PM",
+      "amount": -2500,
+      "type": "expense",
+      "description": "Netflix",
+      "status": "Completed"
+    },
+    {
+      "id": "txn2",
+      "date": "2020-03-27",
+      "time": "at 04:30 AM",
+      "amount": 2000,
+      "type": "income",
+      "description": "Apple",
+      "status": "Completed"
+    },
+    {
+      "id": "txn3",
+      "date": "2020-03-26",
+      "time": "at 13:45 PM",
+      "amount": 750,
+      "type": "income",
+      "description": "Stripe",
+      "status": "Completed"
+    },
+    {
+      "id": "txn4",
+      "date": "2020-03-26",
+      "time": "at 12:30 PM",
+      "amount": 1000,
+      "type": "income",
+      "description": "HubSpot",
+      "status": "Completed"
+    },
+    {
+      "id": "txn5",
+      "date": "2020-03-26",
+      "time": "at 08:30 AM",
+      "amount": 2500,
+      "type": "income",
+      "description": "Creative Tim",
+      "status": "completed"
+    },
+    {
+      "id": "txn6",
+      "date": "2020-03-26",
+      "time": "at 05:00 AM",
+      "amount": 0,
+      "type": "income",
+      "description": "Webflow",
+      "status": "pending"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "#MS-415646",
+      "date": "2020-03-01",
+      "amount": 180,
+      "status": "Paid",
+      "pdf_url": "https://example.com/invoices/MS-415646.pdf"
+    },
+    {
+      "id": "RV-126749",
+      "date": "2021-02-10",
+      "amount": 250,
+      "status": "Paid",
+      "pdf_url": "https://example.com/invoices/RV-126749.pdf"
+    },
+    {
+      "id": "#FB-212562",
+      "date": "2020-04-05",
+      "amount": 560,
+      "status": "Paid",
+      "pdf_url": "https://example.com/invoices/FB-212562.pdf"
+    },
+    {
+      "id": "#QW-103578",
+      "date": "2019-06-25",
+      "amount": 120,
+      "status": "Paid",
+      "pdf_url": "https://example.com/invoices/QW-103578.pdf"
+    },
+    {
+      "id": "#AR-803481",
+      "date": "2020-03-01",
+      "amount": 300,
+      "status": "Paid",
+      "pdf_url": "https://example.com/invoices/AR-80348.pdf"
+    }
+  ],
+  "billing_information": [
+    {
+      "id": "bill1",
+      "name": "Oliver Liam",
+      "company_name": "Viking Burrito",
+      "email": "oliver@burrito.com",
+      "vat_number": "FRB1235476"
+    },
+    {
+      "id": "bill2",
+      "name": "Lucas Harper",
+      "company_name": "Stone Tech Zone",
+      "email": "lucas@stone-tech.com",
+      "vat_number": "FRB1235476"
+    },
+    {
+      "id": "bill3",
+      "name": "Ethan James",
+      "company_name": "Fiber Notion",
+      "email": "ethan@fiber.com",
+      "vat_number": "FRB1235476"
+    }
+  ]
+}

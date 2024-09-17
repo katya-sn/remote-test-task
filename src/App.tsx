@@ -1,25 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CustomContainer } from "./components/CustomContainer";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Invoices } from "./components/Invoices";
+import { PaymentMethod } from "./components/PaymentMethod";
+import { BillingInformation } from "./components/BillingInformation";
+import { Transactions } from "./components/Transactions";
+import { CreditCard } from "./components/CreditCard";
+import { ThemeProvider } from "@emotion/react";
+import theme from "./theme";
+import { Box } from "@mui/material";
+import { TabSettings } from "./components/TabSettings";
+import { BillingCards } from "./components/BillingCards";
+
+export const BASE_URL = process.env.PUBLIC_URL;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider theme={theme}>
+      <CustomContainer>
+        <Header />
+        <Box
+          component="main"
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "repeat(12, 1fr)",
+            },
+            gridTemplateRows: "auto",
+            gap: "20px",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <TabSettings />
+
+          <CreditCard />
+
+          <BillingCards />
+
+          <Invoices />
+
+          <PaymentMethod />
+
+          <BillingInformation />
+
+          <Transactions />
+        </Box>
+        <Footer />
+      </CustomContainer>
+    </ThemeProvider>
   );
 }
 
