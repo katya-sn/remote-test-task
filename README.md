@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+- [DEMO LINK](https://katya-sn.github.io/remote-test-task/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Реалізація тестового завдання 
+Саме завдання : https://docs.google.com/document/d/1v5gAhYiJQ7YCQ3zFNMbRPUJB9N7DviPfBvwnF5boWNw/edit
 
-## Available Scripts
+Визначену частину сайту побудовано на React, MUI library зі стилізаціє CSS in JS.
+Код розбито на **компоненти**, всі дані беруться з локального json-файла.
+**Основна сітка** на десктопі побудовано за допомогою Grid, додавши gridColumns до компонентів. 
+**Aside** меню складається з двох клікабельних акордеонів.
+**Invoices** додані посилання example до pdf.
+**Billing information** картки містять кнопки delete та edit, однак наскільки я зрозуміла - це має вести вже на окрему стерінку редагування, тому вони тут без обробників подій
+**TransictionsЖ:** реалізована можливість обирати стартову та кінцеві дати, на основі цього працює функція-фільтрація, яка і розділяє контент на групи, визначені у макеті. 
+**Header && Footer** містять навігаційні айтеми, які роутером будуть опрацьовані як * - тобто покажуть 404 заголовок.
 
-In the project directory, you can run:
+Якщо якісь елементи таки вимагають обробників/реалізацій на вибір - прошу повідомити мені, я з радістю це зроблю :)
+Робила завдання, спираючись на файл.
 
-### `npm start`
+## Як запустити локально
+1. Clone the repository to your local machine using the command **`git clone https://github.com/katya-sn/remote-test-task.git`**.
+2. Then, navigate to the project directory using **cd remote-test-task**.
+3. Make sure you have Node.js and npm installed, and install the project dependencies by running **`npm install`**.
+4. After the dependencies are installed, start the development server with **`npm start`**.
+5. Finally, open your browser and go to **http://localhost:3000** to see the Landing running locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
