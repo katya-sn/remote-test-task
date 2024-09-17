@@ -16,9 +16,9 @@
 Робила завдання, спираючись на файл.
 
 ## Як запустити локально
-1. Clone the repository to your local machine using the command **`git clone https://github.com/katya-sn/remote-test-task.git`**.
-2. Then, navigate to the project directory using **cd remote-test-task**.
-3. Make sure you have Node.js and npm installed, and install the project dependencies by running **`npm install`**.
-4. After the dependencies are installed, start the development server with **`npm start`**.
-5. Finally, open your browser and go to **http://localhost:3000** to see the Landing running locally.
+1. Клонуйте репозиторій локально **`git clone https://github.com/katya-sn/remote-test-task.git`**.
+2. Навігуйте до його папки **cd remote-test-task**.
+3. Впевніться, що маєте node і запустіть інсталяцію залежностей **`npm install`**.
+4. Після встановлення запустіть сервер розробки **`npm start`**.
+5. Відкрите браузер (якщо не відкрилось автоматично) за посиланням **http://localhost:3000**.
 
