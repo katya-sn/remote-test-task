@@ -1,7 +1,7 @@
 import HomeIcon from "@mui/icons-material/Home";
 import { Breadcrumbs, Link } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { StyledTypography } from "./aside/AccordionItems";
+import { StyledTypography } from "./customs/aside/AccordionItems";
 
 export const Breadcrumb = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export const Breadcrumb = () => {
       aria-label="breadcrumb"
       sx={{
         width: { xs: "280px", md: "206px" },
-        height: '20px',
+        height: "20px",
       }}
     >
       <Link
@@ -19,23 +19,25 @@ export const Breadcrumb = () => {
         onClick={() => navigate("/")}
         sx={{ cursor: "pointer" }}
       >
-        <HomeIcon sx={{width: '16px', height: '16px'}} />
+        <HomeIcon sx={{ width: "16px", height: "16px" }} />
       </Link>
       <Link
         color="inherit"
         onClick={() => navigate("/pages")}
         sx={{ cursor: "pointer", textDecoration: "none" }}
       >
-        <StyledTypography color='primary.contrastText'>Pages</StyledTypography>
+        <StyledTypography color="primary.contrastText">Pages</StyledTypography>
       </Link>
       <Link
         color="inherit"
         onClick={() => navigate("/account")}
         sx={{ cursor: "pointer", textDecoration: "none" }}
       >
-        <StyledTypography color='primary.contrastText'>Account</StyledTypography>
+        <StyledTypography color="primary.contrastText">
+          Account
+        </StyledTypography>
       </Link>
-      <StyledTypography color='primary.contrastText'>Billing</StyledTypography>
+      <StyledTypography color="primary.contrastText">Billing</StyledTypography>
     </Breadcrumbs>
   );
 };

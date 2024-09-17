@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Drawer,
-  Typography,
-  Divider,
-  Stack,
-  Box,
-} from "@mui/material";
-import { AccountAccordion } from "./aside/AccountAccordion";
-import { UserAccordion } from "./aside/UserAccordion";
+import { Drawer, Typography, Divider, Stack, Box } from "@mui/material";
+import { AccountAccordion } from "./customs/aside/AccountAccordion";
+import { UserAccordion } from "./customs/aside/UserAccordion";
 import { BASE_URL } from "../App";
 
 interface AsideDrawerProps {
@@ -21,7 +15,6 @@ export const AsideDrawer: React.FC<AsideDrawerProps> = ({
   isDrawerOpen,
   toggleDrawer,
 }) => {
-
   return (
     <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer(false)}>
       <Stack
@@ -35,11 +28,11 @@ export const AsideDrawer: React.FC<AsideDrawerProps> = ({
         }}
         role="presentation"
       >
-        <Box sx={{display: 'flex', alignItems: 'center', gap: '9px'}}>
+        <Box sx={{ display: "flex", alignItems: "center", gap: "9px" }}>
           <img src={`${BASE_URL}/icons/aside.svg`} alt="material-logo" />
-          <Typography variant="h3" color="white" textAlign='center'>
-           Material Dashboard 2 PRO
-        </Typography>
+          <Typography variant="h3" color="white" textAlign="center">
+            Material Dashboard 2 PRO
+          </Typography>
         </Box>
 
         <Divider

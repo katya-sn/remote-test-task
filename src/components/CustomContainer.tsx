@@ -80,6 +80,7 @@ export const CustomStack: React.FC<CustomStackProps> = ({
         width: { xs: "100%", md: width },
         padding: { xs: "15px 10px", md: "22px 16px" },
         gap: "20px",
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
         ...sx,
       }}
     >

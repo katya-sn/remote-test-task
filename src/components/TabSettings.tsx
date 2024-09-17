@@ -23,6 +23,7 @@ export const TabSettings = () => {
         paddingInline: '7px',
         bgcolor: "primary.main",
         borderRadius: "8px",
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
       }}
     >
       <Tabs

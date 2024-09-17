@@ -1,5 +1,5 @@
 import { Stack } from "@mui/material";
-import { PayPalCard, SalaryCard } from "./ CardBiilingsComponent";
+import { PayPalCard, SalaryCard } from "./customs/ CardBiilingsComponent";
 
 export const BillingCards = () => {
   return (

@@ -1,6 +1,6 @@
 import { Divider, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
-import billingInfo from "../data/billing.json";
+import billingInfo from "../../data/billing.json";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 
@@ -18,10 +18,11 @@ const CardItem: React.FC<Props> = ({ icon, title, text, amount }) => {
         bgcolor: "white",
         borderRadius: "12px",
         width: { xs: "158px", md: "194px" },
-        height: '100%',
+        height: "100%",
         p: { xs: "10px", md: "16px" },
         alignItems: "center",
         justifyContent: "center",
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       }}
     >
       <IconButton

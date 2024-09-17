@@ -21,6 +21,7 @@ export const CreditCard = () => {
         justifyContent: "space-between",
         bgcolor: "secondary.dark",
         color: "white",
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"
       }}
     >
       <WifiIcon />
