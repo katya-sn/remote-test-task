@@ -13,6 +13,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Breadcrumb } from "./Breadcrumbs";
 import { useState } from "react";
 import { AsideDrawer } from "./AsideDrawer";
+import { IconForHeader } from "./customs/IconForHeader";
 
 export const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -74,31 +75,17 @@ export const Header = () => {
               padding: "8px 12px",
               border: "1px solid",
               borderColor: "primary.light",
-              width: { xs: "120px", sm: "173px" },
+              width: { xs: "100px", sm: "173px" },
               height: "42px",
+
             }}
           />
-          <IconButton>
-            <AccountCircleIcon />
-          </IconButton>
-          <IconButton>
-            <SettingsIcon />
-          </IconButton>
-          <IconButton>
-            <Badge
-              badgeContent={11}
-              sx={{
-                "& .MuiBadge-badge": {
-                  bgcolor: "#E91F63",
-                  color: "white",
-                  top: 3,
-                  padding: "0 4px",
-                },
-              }}
-            >
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <IconForHeader icon={<AccountCircleIcon />} />
+          <IconForHeader icon={<SettingsIcon/>} />
+          <IconForHeader
+            icon={<NotificationsIcon />}
+            badgeContent={11}
+          />
         </Box>
       </Stack>
       <AsideDrawer isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
