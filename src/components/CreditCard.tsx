@@ -9,7 +9,7 @@ const CardNumber = styled(Typography)(() => ({
   fontWeight: "bold",
 }));
 
-export const CreditCard = ({}) => {
+export const CreditCard = () => {
   const { cards } = billingInfo;
   const card = cards[0];
   return (
@@ -39,6 +39,7 @@ export const CreditCard = ({}) => {
           </Typography>
         </Stack>
         <img
+          alt="type-of-card-icon"
           src={`${BASE_URL}/icons/mastercard.svg`}
           style={{
             width: "42px",

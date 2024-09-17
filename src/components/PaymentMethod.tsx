@@ -51,6 +51,7 @@ export const PaymentMethod = () => {
           >
             <Stack spacing="17px" direction="row" alignItems="center">
               <img
+                alt="card-type-icon"
                 src={`${BASE_URL}/icons/${card.type}.svg`}
                 style={{ width: "32px", height: "25" }}
               />
