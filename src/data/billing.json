@@ -8,7 +8,7 @@
   "cards": [
     {
       "id": "card1",
-      "type": "masterCard",
+      "type": "mastercard",
       "name": "John Doe",
       "number": "**** **** **** 7852",
       "expiry_date": "11/22"
