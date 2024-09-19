@@ -38,6 +38,7 @@ export const PaymentMethod = () => {
       >
         {cards.map((card) => (
           <Stack
+            key={card.id}
             direction="row"
             alignItems="center"
             justifyContent="center"
